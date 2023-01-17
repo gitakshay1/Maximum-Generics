@@ -28,5 +28,25 @@ namespace Maximum_Generics
             }
 
         }
+        public void Maximumfloat(double firstValue, double secondValue, double thirdValue)
+        {
+            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0 ||
+                firstValue.CompareTo(secondValue) >= 0 && firstValue.CompareTo(thirdValue) > 0 ||
+                firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) >= 0)
+            {
+                Console.WriteLine(firstValue + " is Maximum");
+            }
+            if (secondValue.CompareTo(thirdValue) > 0 && secondValue.CompareTo(firstValue) > 0 ||
+                secondValue.CompareTo(thirdValue) >= 0 && secondValue.CompareTo(firstValue) > 0 ||
+                secondValue.CompareTo(thirdValue) > 0 && secondValue.CompareTo(firstValue) >= 0)
+            {
+                Console.WriteLine(secondValue + " is Maximum");
+            }
+            else
+            {
+                Console.WriteLine(thirdValue + " is Maximum");
+            }
+
+        }
     }
 }
