@@ -4,10 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Maximum max=new Maximum();
-            max.Max(7, 39, 98);
-            max.Max(12.33, 36.89, 22.68);
-            max.Max("Apple", "Peach", "Banana");
+            Maximum<int> maxint=new Maximum<int>();
+            maxint.Max(7, 39, 98);
+            Maximum<double> maxdouble = new Maximum<double>();
+            maxdouble.Max(12.33, 36.89, 22.68);
+            Maximum<string> maxstring = new Maximum<string>();
+            maxstring.Max("Apple", "Peach", "Banana");
         }
     }
 }

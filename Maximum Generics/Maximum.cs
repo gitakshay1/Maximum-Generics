@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Maximum_Generics
 {
-    internal class Maximum
+    internal class Maximum<T> where T : IComparable
     {
-        public void Max<T>(T firstValue, T secondValue, T thirdValue)where T:IComparable
+        public void Max(T firstValue, T secondValue, T thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0 ||
                 firstValue.CompareTo(secondValue) >= 0 && firstValue.CompareTo(thirdValue) > 0 ||
